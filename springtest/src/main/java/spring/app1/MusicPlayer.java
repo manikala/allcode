@@ -1,7 +1,10 @@
 package spring.app1;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class MusicPlayer {
-    private Music music;
+    private ClassicalMusic classicalMusic;
 
 //    private String name;
 //    private int volume;
@@ -22,8 +25,8 @@ public class MusicPlayer {
 //        this.volume = volume;
 //    }
 
-    public  MusicPlayer(Music music) {
-        this.music = music;
+    public  MusicPlayer(ClassicalMusic classicalMusic) {
+        this.classicalMusic = classicalMusic;
     }
 //    public MusicPlayer () {}
 
@@ -33,6 +36,6 @@ public class MusicPlayer {
 
 
     public void playMusic () {
-        System.out.println("Playing: " + music.getSong());
+        System.out.println("Playing: " + classicalMusic.getSong());
     }
 }

@@ -11,16 +11,14 @@ public class TestString {
 //
 //        System.out.println(classicalMusic.getSong());
 
-        Music music = context.getBean("rockMusic", Music.class);
-
-        MusicPlayer musicPlayer = new MusicPlayer (music);
-        musicPlayer.playMusic();
-
-        Music music2 = context.getBean("classicalMusic", Music.class);
-        MusicPlayer classicalMusicPlayer = new MusicPlayer(music2);
-        classicalMusicPlayer.playMusic();
-
-
+//        Music music = context.getBean("rockMusic", Music.class);
+//
+//        MusicPlayer musicPlayer = new MusicPlayer (music);
+//        musicPlayer.playMusic();
+//
+//        Music music2 = context.getBean("classicalMusic", Music.class);
+//        MusicPlayer classicalMusicPlayer = new MusicPlayer(music2);
+//        classicalMusicPlayer.playMusic();
 /*
         MusicPlayer firstMusicPlayer = context.getBean("musicPlayer", MusicPlayer.class);
         MusicPlayer secondMusicPlayer = context.getBean("musicPlayer", MusicPlayer.class);
@@ -38,6 +36,9 @@ public class TestString {
 
         //System.out.println(musicPlayer.getName());
         //System.out.println(musicPlayer.getVolume());
+
+
+        MusicPlayer musicPlayer = context.getBean("musicPlayer", MusicPlayer.class);
 
         context.close();
 
