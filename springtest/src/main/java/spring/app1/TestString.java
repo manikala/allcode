@@ -38,7 +38,11 @@ public class TestString {
         //System.out.println(musicPlayer.getVolume());
 
 
-        MusicPlayer musicPlayer = context.getBean("musicPlayer", MusicPlayer.class);
+        //MusicPlayer musicPlayer = context.getBean("musicPlayer", MusicPlayer.class);
+        //musicPlayer.playMusic();
+
+        Computer computer = context.getBean("computer", Computer.class);
+        System.out.println(computer);
 
         context.close();
 
